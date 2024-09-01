@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <script defer src="main.js"></script>
+    <title>Portfolio-Naman Sawairam</title>
+</head>
+<body>
+    
+    <main>
+        <aside>
+            <ul class="Links">
+                <li onclick="Navigate(0)" class="activeLink"><i class="fa-solid fa-house"></i>
+                    <p>Home</p>
+                </li>
+                <li onclick="Navigate(1)"><i class="fa-solid fa-user" ></i>
+                    <p>About Me</p>
+                </li>
+                <li onclick="Navigate(2)"><i class="fa-solid fa-list"></i>
+                    <p>Projects</p>
+                </li>
+                <li onclick="Navigate(3)"><i class="fa-solid fa-comments"></i>
+                    <p>Contact Me</p>
+                </li>
+            </ul>
+        </aside>
+        <div class="swiper mySwiper">
+            <div class="SlideContainer swiper-wrapper">
+                <div class="swiper-slide home-slide">
+                    <div class="HomeContent">
+                        <h1>Hi! I'm <span class="stylized-name">Naman</span>,</h1>
+                        <h2>A <span class="proffesions">Web Developer</span></h2>
+                        <p class="heroline">I'm a Full-Stack Web Developer and currently studying in final year of Bachelor of Enginerring in Computer Engineering.</p>
+                        <div class="buttonGroup"><button onclick="Navigate(1)">About Me</button><button onclick="Navigate(3)">Contact Me</button></div>
+                    </div>
+                    <div class="SideImg">
+                        <div class="top-right-corner">
+                            <hr class="hr1">
+                            <hr class="hr2">
+                        </div>
+                        <img src="Assets/profileImg.jpg" alt="">
+                        <div class="bottom-left-corner">
+                            <hr class="hr1">
+                            <hr class="hr2">
+                        </div>
+                    </div>
+                    <p class="slide-help">Scroll for next slide <i class="fa-solid fa-chevron-right fa-shake"></i>
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="about-us">
+                    <h1 class="heading">About Me</h1>
+                    <h3 class="sub-heading">I'm Naman Sawairam, <span class="proffesions">A Web Developer</span></h3>
+                    <p class="aboutme-deatils">Fresher with B.E. in Computer Engineering, graduating in 2025, having good hands on HTML, CSS, JavaScript and React Js as Front-end skills, Node Js and MongoDB as Back-end skills. Looking forward to work as a Full-stack Developer.
+                    </p>
+                    <div class="about-me-divison">
+                        <div class="about-me-table">
+                            <li><span>Country:</span>India</li>
+                            <li><span>Phone:</span>+919922669555</li>
+                            <li><span>Email:</span>namansawairam@gmail.com</li>
+                            <li><span>Degree:</span>B.E. Computer Engineering</li>
+                            <li><span>College:</span>Sinhgad College Of Engineering, Pune</li>
+                            <li><span>Languages:</span>English, Hindi, Marathi</li>
+                            <div class="buttonGroup"><a href="Assets/ResumeNaman.pdf "><button>Download CV</button></a></div>
+                        </div>
+
+                        <div class="skill-bar">
+                            <li>
+                                <p>HTML</p>
+                                <div class="bar">
+                                    <div class="active-bar" style="width:99%"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <p>CSS</p>
+                                <div class="bar">
+                                    <div class="active-bar" style="width:80%"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <p>JavaScript</p>
+                                <div class="bar">
+                                    <div class="active-bar" style="width:85%"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <p>Python</p>
+                                <div class="bar">
+                                    <div class="active-bar" style="width:50%"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <p>React Js</p>
+                                <div class="bar">
+                                    <div class="active-bar" style="width:60%"></div>
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                </div></div>
+                <div class="swiper-slide projects">
+
+                    <h1 class="heading">Projects</h1>
+                    <div class="project">
+                        <div class="project-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+                        <h2>A travel Booking Site</h2>
+                        <p><a href="https://get-set-go-tours.vercel.app/">Click Here</a></p>
+                    </div>
+                    <div class="project">
+                        <div class="project-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+                        <h2>Movie Web App</h2>
+                        <p><a href="https://movie-app-vert-ten.vercel.app/">Click Here</a></p>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide contactMe">
+                    <h1 class="heading">Contact Me</h1>
+                    <div class="contactinfo"><i class="fa-solid fa-phone"></i>
+                        <h3>Mobile No</h3>
+                        <p>+919922669555</p>
+                    </div>
+                    <div class="contactinfo"><i class="fa-solid fa-location-dot"></i>
+                        <h3>Location</h3>
+                        <p>Pune, India</p>
+                    </div>
+                    <div class="contactinfo"><i class="fa-regular fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>namansawairam@gmail.com</p>
+                    </div>
+                    <form>
+                        <h2>Send Me A Message <div class="SocialLinks">
+                                <a href="https://www.linkedin.com/in/naman-sawairam1818/"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://www.instagram.com/naman_s_18/"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://x.com/NSawairam"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="https://github.com/namans18"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://www.facebook.com/naman.sawairam/"><i class="fa-brands fa-facebook"></i></a>
+                            </div>
+                        </h2>
+                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="email">
+                        <textarea rows="10" placeholder="Type your Message Here..."></textarea>
+                        <button class="primary">Send</button>
+
+                    </form>
+                    <footer>
+                        <li>Copyright © 2024 Naman Sawairam.</li>
+                    </footer>
+                </div>
+            </div>
+    </main>
+
+</body>
+</html>
